@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Alsayed | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body data-theme="dark">
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Mohamed<span>.</span></a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu - FIXED Z-INDEX -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Close Button - SEPARATE from mobile menu -->
+    <button class="close-menu" id="close-menu" style="display: none;">
+        <i class="fas fa-times"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div id="scene-container"></div>
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Hi, I'm <span>Mohamed Alsayed</span></h1>
+                <p>Full Stack Developer & Software Tester with expertise in modern web technologies and a passion for
+                    creating innovative solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn" id="view-work-btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline" id="contact-btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h3>Full Stack Developer</h3>
+                    <p>I'm a passionate Full Stack Developer with a strong foundation in both front-end and back-end
+                        technologies. I graduated from the Faculty of Computer and Information Science at Zagazig
+                        University (2020-2024).</p>
+                    <p>Currently working as a Software Tester at Meeg, I bring a comprehensive understanding of software
+                        development lifecycle and quality assurance to every project.</p>
+                    <div class="skills">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">Bootstrap</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">JQuery</div>
+                        <div class="skill">MySQL</div>
+                        <div class="skill">PHP</div>
+                        <div class="skill">Python</div>
+                        <div class="skill">Java</div>
+                        <div class="skill">C++</div>
+                        <div class="skill">OOP</div>
+                        <div class="skill">Problem Solving</div>
+                        <div class="skill">Data Structures</div>
+                    </div>
+                </div>
+                <div class="about-image floating fade-in">
+                    <div
+                        style="width: 100%; height: 400px; background: var(--gradient); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-code" style="font-size: 5rem; color: white;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" style="background: var(--timeline-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience & Education</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Software Tester</h3>
+                        <p>Meeg</p>
+                        <p>2024 - Present</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Front End Developer Intern</h3>
+                        <p>ITI</p>
+                        <p>2023</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Bachelor of Computer Science</h3>
+                        <p>Zagazig University</p>
+                        <p>2020 - 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Media App</h3>
+                        <p>A full-stack social media application with user authentication, posts, comments, and
+                            real-time messaging.</p>
+                        <a href="https://github.com/mo-alsayed/social_app" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>An advanced 3D portfolio website with animations and modern design principles.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>A complete e-commerce solution with product catalog, shopping cart, and payment integration.
+                        </p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>mohamedalsayed1062002@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Zagazig, Egypt</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+201555966520</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form fade-in" action="mailto:mohamedalsayed1062003@gmail.com" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mohamed-alsayed-mohamed-7585ab242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    class="social-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/mo-alsayed" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p class="copyright">© 2023 Mohamed Alsayed. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
